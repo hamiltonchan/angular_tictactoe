@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
+	<title>Tic Tac Toe - Built with AngularJS</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-	<h1>Hello</h1>
+
+	<h1>Tic Tac Toe</h1>
+		
+	<div x-ng-app="" class="board" x-ng-controller="TicTacController">
+		<div class="innerbox" x-ng-repeat="cell in cells track by $index" ng-click="drawMark($index)" >
+			{{cell}}
+		</div>
+
+
+
+	</div>
+
 </body>
+
 </html>
+

@@ -1,0 +1,43 @@
+body {
+	font-family: Futura;
+	background-color: #ece6de;
+}
+
+h1 {
+	font-size: 56px;
+	text-align: center;
+	color: #7f2525;
+}
+
+.board {
+	width: 468px;
+	height: 468px;
+	margin: 0 auto;
+
+}
+
+.innerbox {
+	color: #7f2525;
+	text-align: center;
+	line-height: 125px;
+	font-size: 100px;
+	float: left;
+	width: 150px;
+	height: 150px;
+	background-color: #aca090;
+	margin: 3px;
+	cursor: pointer;
+	border-radius: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+
+
+
+
+
