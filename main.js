@@ -28,7 +28,7 @@ function TicTacController($scope) {
 		var row = Math.floor(index/3);
 		var column = (index % 3);
 		grid[row][column] = currentMark;
-		evaluateWin();
+		if (gameover == false) evaluateWin();
 	}
 
 	var evaluateWin = function() {
