@@ -8,17 +8,35 @@
 	<link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body x-ng-app="" x-ng-controller="TicTacController">
+	<div class="left">
+		<br />
+		<br />
+		<p><input type="text" id="p1_name" ng-model="player1Name" ng-init="player1Name = 'Player 1'" ng-click="setName1(player1Name)" ng-keyup="removeFocus1($event)" /><p>
+		<br />
+		<br />
+		<p id="p1_score">{{leftScore}}</p>
+		<p id="left_message">{{leftMessage}}</p>
+	</div>
+	<div class="right">
+		<br />
+		<br />
+		<p><input type="text" id="p2_name" ng-model="player2Name" ng-init="player2Name = 'Player 2'" ng-click="setName2(player2Name)" ng-keyup="removeFocus2($event)"/><p>
+		<br />
+		<br />
+		<p id="p2_score">{{rightScore}}</p>
+		<p id="right_message">{{rightMessage}}</p>
+	</div>
 
-	<h1>Tic Tac Toe</h1>
-		
-	<div x-ng-app="" class="board" x-ng-controller="TicTacController">
+	<div class="board">
+		<h1>Tic Tac Toe</h1>
 		<div class="innerbox" x-ng-repeat="cell in cells track by $index" ng-click="drawMark($index)" >
 			{{cell}}
 		</div>
-
-
-
+		<br />
+		<br />
+		<br />
+		<div class="reset" ng-click="clearBoard()">New Game</div>
 	</div>
 
 </body>
