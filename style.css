@@ -27,7 +27,7 @@ h1 {
 	background-color: #aca090;
 	margin: 3px;
 	cursor: pointer;
-	border-radius: 100%;
+	border-radius: 10px;
 }
 
 .clear {
